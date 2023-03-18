@@ -4,14 +4,14 @@ import journey from "./assets/journey1.png";
 
 function App() {
   return (
-    <div className="bg-card2 h-full text-brokenWhite">
+    <div className="bg-cgrey h-screen text-brokenWhite flex-col flex-wrap">
       <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      {/* <Journey className="bg-card1 bg-card2 text-right text-inline"/> */}
+      {/* <Journey className="bg-card1 bg-cgrey text-right text-inline"/> */}
 
       {/* JOURNEY */}
-      <div className="bg-card2 border border-black text-left p-5 flex-col">
+      <div className="bg-cgrey text-left p-5 flex-col">
         <div className="text-xl">
-          <div className="bg-card2 py-2 flex items-center">
+          <div className="bg-cgrey py-2 flex items-center">
             <p>OUR JOURNEY STARTED</p>
             <img
               alt="our wedding"
@@ -44,10 +44,10 @@ function App() {
         </p>
       </div>
 
-      {/* I SAID I DO */}
-      <div className="h-1/2 bg-card3 text-gray relative flex justify-center">
+      {/* GUIDE*/}
+      <div className="bg-cgrey2 text-gray relative flex justify-center h-full">
         <div className="h-full w-11/12">
-          <div className="bg-card4 rounded-b-full text-center p-5 w-full overflow-hidden">
+          <div className="bg-cpeach2 rounded-b-full relative text-center p-5 w-full z-10">
             <h1 className="py-2 text-2xl mb-3">
               WEDDING
               <br />
@@ -63,9 +63,44 @@ function App() {
             <p className="italic text-sm">*All times are in WIB</p>
           </div>
 
-          <div className="bg-card5 h-full rounded-t-3xl text-center p-5">
-            <h1>Saturday, May 7, 2022</h1>
-            <button className="border-card4 border">ADD TO CALENDAR</button>
+          <div className="bg-cpeach rounded-t-full text-center p-5 absolute top-1/4 w-11/12">
+            <div className="mt-10 p-10">
+              <h1>Friday, May 6, 2022</h1>
+              <button className="border-cgrey border bg-cgrey3 rounded-xl shadow-md p-1 hover:bg-cgrey hover:text-white">
+                ADD TO CALENDAR
+              </button>
+            </div>
+          </div>
+
+          <div className="bg-cpeach rounded text-center bottom-0 top-96 absolute w-11/12 flex-col flex-wrap">
+            <div className="left-1/2 items-center object-center">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fd/20_airtransportation_inv.svg"
+                className="w-12"
+              />
+            </div>
+            <div className="">
+              <h1>FAMILY ARRIVAL & CHECK IN</h1>
+              <h2>GUEST HOUSE YOGYAKARTA, YOGYAKARTA</h2>
+              <h2>12.00 ONWARDS</h2>
+            </div>
+            <div className="left-1/2 items-center object-center">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fd/20_airtransportation_inv.svg"
+                className="w-12"
+              />
+            </div>
+            <div className="">
+              <h1>FAMILY WELCOME DINNER</h1>
+              <h2>12.00 ONWARDS</h2>
+            </div>
+
+            <div className="mt-10 p-10">
+              <h1>Saturday, May 6, 2022</h1>
+              <button className="border-cgrey border bg-cgrey3 rounded-xl shadow-md p-1 hover:bg-cgrey hover:text-white">
+                ADD TO CALENDAR
+              </button>
+            </div>
           </div>
         </div>
       </div>
