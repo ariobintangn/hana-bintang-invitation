@@ -17,7 +17,7 @@ function App() {
               alt="our wedding"
               src={journey}
               // style={{ maxWidth: "100px", borderRadius: "30%" }}
-              className="w-32 object-cover rounded-3xl"
+              className="w-32 object-cover rounded-3xl ml-3"
             />
           </div>
           <p className="py-2">WHEN WE PLAYED MUSIC</p>
@@ -45,8 +45,8 @@ function App() {
       </div>
 
       {/* GUIDE*/}
-      <div className="bg-cgrey2 text-gray relative flex justify-center h-full">
-        <div className="h-full w-11/12">
+      {/* <div className="bg-cgrey2 text-gray relative flex justify-center h-full object-contain">
+        <div className="w-11/12">
           <div className="bg-cpeach2 rounded-b-full relative text-center p-5 w-full z-10">
             <h1 className="py-2 text-2xl mb-3">
               WEDDING
@@ -72,35 +72,106 @@ function App() {
             </div>
           </div>
 
-          <div className="bg-cpeach rounded text-center bottom-0 top-96 absolute w-11/12 flex-col flex-wrap">
+          <div className="container bg-cpeach rounded text-center bottom-0 top-96 absolute w-11/12 flex-col flex-wrap">
             <div className="left-1/2 items-center object-center">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/f/fd/20_airtransportation_inv.svg"
-                className="w-12"
+                alt="plane"
+                className="w-12 m-auto"
               />
             </div>
             <div className="">
-              <h1>FAMILY ARRIVAL & CHECK IN</h1>
-              <h2>GUEST HOUSE YOGYAKARTA, YOGYAKARTA</h2>
-              <h2>12.00 ONWARDS</h2>
+              <p className="text-md">FAMILY ARRIVAL & CHECK IN</p>
+              <p className="text-sm">GUEST HOUSE YOGYAKARTA, YOGYAKARTA</p>
+              <p className="text-xs">12.00 ONWARDS</p>
             </div>
-            <div className="left-1/2 items-center object-center">
+            <div className="left-1/2 items-center object-center mt-4">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/f/fd/20_airtransportation_inv.svg"
-                className="w-12"
+                className="w-12 m-auto"
+                alt="plane"
               />
             </div>
             <div className="">
-              <h1>FAMILY WELCOME DINNER</h1>
-              <h2>12.00 ONWARDS</h2>
+              <p>FAMILY WELCOME DINNER</p>
+              <p className="text-xs">12.00 ONWARDS</p>
             </div>
-
+          
             <div className="mt-10 p-10">
               <h1>Saturday, May 6, 2022</h1>
               <button className="border-cgrey border bg-cgrey3 rounded-xl shadow-md p-1 hover:bg-cgrey hover:text-white">
                 ADD TO CALENDAR
               </button>
             </div>
+
+            <div className="left-1/2 items-center object-center">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fd/20_airtransportation_inv.svg"
+                alt="plane"
+                className="w-12 m-auto"
+              />
+            </div>
+            <div className="">
+              <p className="text-md">FAMILY ARRIVAL & CHECK IN</p>
+              <p className="text-sm">GUEST HOUSE YOGYAKARTA, YOGYAKARTA</p>
+              <p className="text-xs">12.00 ONWARDS</p>
+            </div>
+            <div className="left-1/2 items-center object-center mt-4">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fd/20_airtransportation_inv.svg"
+                className="w-12 m-auto"
+                alt="plane"
+              />
+            </div>
+            <div className="">
+              <p>FAMILY WELCOME DINNER</p>
+              <p className="text-xs">12.00 ONWARDS</p>
+            </div>
+          </div>
+        </div>
+      </div> */}
+      {/* TRAVEL GUIDE */}
+      <div className="text-brokenWhite bg-cgrey1 w-full text-center">
+        <div className="container m-auto">
+          <h1 className="text-3xl p-5">TRAVEL GUIDE</h1>
+
+          <div className="w-80 m-auto p-3">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d2/White_plane_icon.svg"
+              alt="plane"
+              className="m-auto w-12 pb-2"
+            />
+            <h1 className="p-1">GETTING THERE</h1>
+            <p className="pb-3">
+              We encourage you to book your own flight ticket to Yogyakarta
+            </p>
+          </div>
+
+          <div className="w-80 m-auto p-3">
+            <img
+              src="https://www.pngfind.com/pngs/m/144-1449175_png-file-svg-logo-hotel-vector-png-transparent.png"
+              alt="hotel"
+              className="m-auto w-12 pb-2 rounded-md"
+            />
+            <h1 className="p-1 pb-3">COMPLIMENTARY ACCOMODATION</h1>
+            <p className="pb-1"><b>Friends</b></p>
+            <p className="pb-1">Sheraton Hotel, Yogyakarta</p>
+            <p className="pb-3 text-sm italic">2 Nights (May 6 - May 7, 2022)</p>
+            <p className="pb-1"><b>Family</b></p>
+            <p className="pb-1">Royal Ambarukmo Yogyakarta</p>
+            <p className="pb-3 text-sm italic">3 Nights (May 5 - May 7, 2022)</p>
+          </div>
+
+          <div className="w-80 m-auto p-3">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/BSicon_BUS.svg/500px-BSicon_BUS.svg.png"
+              alt="hotel"
+              className="m-auto w-12 pb-2 bg-white rounded-full"
+            />
+            <h1 className="p-1">COMPLIMENTARY SHUTTLE</h1>
+            <p className="pb-3 text-sm">
+              There will be a complimentary shuttle from your hotel to the venue
+            </p>
           </div>
         </div>
       </div>

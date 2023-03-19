@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         card1: "rgba(255,0,0,1)",
         cgrey: "#6B717E",
+        cgrey1: "#2f2e2d",
         cgrey2: "#a4a19e",
         cgrey3: "#e2eae6",
         cpink1: "#FFC4D1",
