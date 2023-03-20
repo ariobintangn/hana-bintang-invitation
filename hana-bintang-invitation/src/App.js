@@ -1,22 +1,63 @@
 import "./App.css";
 // import Journey from "./views/journey";
-import paper from "./assets/paper.png";
-import Guide from "./views/TravelGuide";
+// import paper from "./assets/paper.png";
+// import Guide from "./views/TravelGuide";
+import opening from "./assets/opening.JPG";
 import journey from "./assets/journey1.png";
 import TravelGuide from "./views/TravelGuide";
 
+import React, { useState, useEffect } from "react";
+
 function App() {
+  const [elapsedTime, setElapsedTime] = useState(0);
+
+  useEffect(() => {
+    const eventDate = new Date("May 7, 2022 16:30:00").getTime();
+
+    const intervalId = setInterval(() => {
+      const now = new Date().getTime();
+      const timeDiff = now - eventDate;
+      setElapsedTime(timeDiff);
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  const years = Math.floor(elapsedTime / (365 * 24 * 60 * 60 * 1000));
+  const months = Math.floor(
+    (elapsedTime % (365 * 24 * 60 * 60 * 1000)) / (30 * 24 * 60 * 60 * 1000)
+  );
+  const days = Math.floor(
+    (elapsedTime % (30 * 24 * 60 * 60 * 1000)) / (24 * 60 * 60 * 1000)
+  );
+  const hours = Math.floor(
+    (elapsedTime % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000)
+  );
+  const minutes = Math.floor((elapsedTime % (60 * 60 * 1000)) / (60 * 1000));
+  const seconds = Math.floor((elapsedTime % (60 * 1000)) / 1000);
   return (
     <div className="bg-cgrey h-screen text-brokenWhite flex-col flex-wrap">
       <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      
+
+      {/* MAIN IMAGE */}
+      <div className="container">
+        <div className="relative container">
+          <img src={opening} alt="main wedding" className="" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-cgrey1 bg-opacity-60 h-full text-center align-middle w-full">
+            <h1 class="absolute text-2xl md:text-5xl text-brokenWhite italic top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              "Love is composed of a single soul inhabiting two bodies"
+            </h1>
+          </div>
+        </div>
+      </div>
 
       {/* TIME CARD COUNTDOWN */}
       <div className="bg-ccream2 text-gray text-center w-full m-auto">
         <div className="container">
           <img
             src="https://irwanclaudia.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvector-cut.3158038d.png&w=3840&q=75"
-            className="absolute -translate-y-24"
+            className="absolute -translate-y-20"
+            alt="scrapped paper"
           />
           <div className="text-chocolate p-5">#ARIOHANA</div>
           <div className="italic text-2xl w-3/4 m-auto mt-8">
@@ -27,7 +68,35 @@ function App() {
             <div className="border-cgrey2 border-r-2"></div>
             <div></div>
           </div>
-          <div className="mt-8">testing</div>
+          <div className="text-chocolate pt-5">Count-up!</div>
+          <div className="container p-4">
+            <div className="flex flex-row -translate-x-3">
+              <div className="bg-cgreen w-1/4 rounded-full p-3 translate-x-9 z-50">
+                {years}
+                <div>Years</div>
+              </div>
+              <div className="bg-cpeach w-1/4 rounded-full p-3 translate-x-6 z-40">
+                {months}
+                <div>Months</div>
+              </div>
+              <div className="bg-cgreen w-1/4 rounded-full p-3 translate-x-3 z-30">
+                {days}
+                <div>Days</div>
+              </div>
+              <div className="bg-cpeach w-1/4 rounded-full p-3 z-20">
+                {hours}
+                <div>Hours</div>
+              </div>
+              <div className="bg-cgreen w-1/4 rounded-full p-3 -translate-x-3 z-10">
+                {minutes}
+                <div>Minutes</div>
+              </div>
+              <div className="bg-cpeach w-1/4 rounded-full p-3 -translate-x-6">
+                {seconds}
+                <div>seconds</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -68,8 +137,6 @@ function App() {
           hand in marriage, to which she said <b>"I DO!"</b>
         </p>
       </div>
-
-     
 
       {/* GUIDE*/}
       {/* <div className="bg-cgrey2 text-gray relative flex justify-center h-full object-contain">
