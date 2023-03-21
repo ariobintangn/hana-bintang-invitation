@@ -46,6 +46,7 @@ function App() {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-cgrey1 bg-opacity-60 h-full text-center align-middle w-full">
             <h1 class="absolute text-2xl md:text-5xl text-brokenWhite italic top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
               "Love is composed of a single soul inhabiting two bodies"
+            <p className="text-sm xl:text-xl mt-2">-Aristoteles</p>
             </h1>
           </div>
         </div>
@@ -59,39 +60,41 @@ function App() {
             className="absolute -translate-y-20"
             alt="scrapped paper"
           />
-          <div className="text-chocolate p-5">#ARIOHANA</div>
+          <div className="text-chocolate p-5 font-semibold">#ARIOHANA</div>
           <div className="italic text-2xl w-3/4 m-auto mt-8">
             Here's to the beginning of our forever that we would like to share
             with you!
           </div>
-          <div className="flex justify-center h-20 mt-8">
+          <div className="flex justify-center h-48 mt-8 mb-4">
             <div className="border-cgrey2 border-r-2"></div>
             <div></div>
           </div>
-          <div className="text-chocolate pt-5">Count-up!</div>
-          <div className="container p-4">
-            <div className="flex flex-row -translate-x-3">
-              <div className="bg-cgreen w-1/4 rounded-full p-3 translate-x-9 z-50">
+          
+          <div className="text-chocolate pt-5 pb-2 font-bold">Love shared since May 7th, 2022:</div>
+
+          <div className="container p-4 pb-8 max-w-md m-auto font-semibold">
+            <div className="flex -translate-x-3">
+              <div className="bg-cgreen w-1/6 rounded-full text-sm p-3 translate-x-9 z-50">
                 {years}
                 <div>Years</div>
               </div>
-              <div className="bg-cpeach w-1/4 rounded-full p-3 translate-x-6 z-40">
+              <div className="bg-cpeach w-1/6 rounded-full text-sm p-3 translate-x-6 z-40">
                 {months}
                 <div>Months</div>
               </div>
-              <div className="bg-cgreen w-1/4 rounded-full p-3 translate-x-3 z-30">
+              <div className="bg-cgreen w-1/6 rounded-full text-sm p-3 translate-x-3 z-30">
                 {days}
                 <div>Days</div>
               </div>
-              <div className="bg-cpeach w-1/4 rounded-full p-3 z-20">
+              <div className="bg-cpeach w-1/6 rounded-full text-sm p-3 z-20">
                 {hours}
                 <div>Hours</div>
               </div>
-              <div className="bg-cgreen w-1/4 rounded-full p-3 -translate-x-3 z-10">
+              <div className="bg-cgreen w-1/6 rounded-full text-sm p-3 -translate-x-3 z-10">
                 {minutes}
                 <div>Minutes</div>
               </div>
-              <div className="bg-cpeach w-1/4 rounded-full p-3 -translate-x-6">
+              <div className="bg-cpeach w-1/6 rounded-full text-sm p-3 -translate-x-6">
                 {seconds}
                 <div>seconds</div>
               </div>
@@ -103,39 +106,41 @@ function App() {
       {/* <Journey className="bg-card1 bg-cgrey text-right text-inline"/> */}
 
       {/* JOURNEY */}
-      <div className="bg-cgrey text-left p-5 flex-col">
-        <div className="text-xl">
-          <div className="bg-cgrey py-2 flex items-center">
-            <p>OUR JOURNEY STARTED</p>
-            <img
-              alt="our wedding"
-              src={journey}
-              // style={{ maxWidth: "100px", borderRadius: "30%" }}
-              className="w-32 object-cover rounded-3xl ml-3"
-            />
+      <div className="">
+        <div className="bg-cgrey text-left p-5 flex-col md:w-10/12">
+          <div className="text-xl">
+            <div className="bg-cgrey py-2 flex items-center">
+              <p>OUR JOURNEY STARTED</p>
+              <img
+                alt="our wedding"
+                src={journey}
+                // style={{ maxWidth: "100px", borderRadius: "30%" }}
+                className="w-32 object-cover rounded-3xl ml-3"
+              />
+            </div>
+            <p className="py-2">WHEN WE PLAYED MUSIC</p>
+            <p className="py-2 italic">Together</p>
           </div>
-          <p className="py-2">WHEN WE PLAYED MUSIC</p>
-          <p className="py-2 italic">Together</p>
+          <p className="text-justify py-2">
+            What started as a collaboration for Teman Jakarta's Youtube channel
+            turns out to be the beginning of our story. Not long after meeting for
+            the first time, our connection seems to get stronger with each passing
+            day.
+          </p>
+          <img
+            alt="our wedding 2"
+            src={journey}
+            // style={{ maxWidth: "80%", borderRadius: "30%"}}
+            className="h-96 w-full object-cover rounded-full p-5"
+          />
+          <h1 className="text-2xl my-5 italic text-center">I said "I do"</h1>
+          <p className="text-justify py-2">
+            It's not always been an easy road to travel, as with every couple. Yet
+            the more we knew each other, the more everything seems to be aligning
+            together. On that fateful day in August 2021, Ario asked Hana for her
+            hand in marriage, to which she said <b>"I DO!"</b>
+          </p>
         </div>
-        <p className="text-justify py-2">
-          What started as a collaboration for Teman Jakarta's Youtube channel
-          turns out to be the beginning of our story. Not long after meeting for
-          the first time, our connection seems to get stronger with each passing
-          day.
-        </p>
-        <img
-          alt="our wedding 2"
-          src={journey}
-          // style={{ maxWidth: "80%", borderRadius: "30%"}}
-          className="h-96 w-full object-cover rounded-full p-5"
-        />
-        <h1 className="text-2xl my-5 italic text-center">I said "I do"</h1>
-        <p className="text-justify py-2">
-          It's not always been an easy road to travel, as with every couple. Yet
-          the more we knew each other, the more everything seems to be aligning
-          together. On that fateful day in August 2021, Ario asked Hana for her
-          hand in marriage, to which she said <b>"I DO!"</b>
-        </p>
       </div>
 
       {/* GUIDE*/}
