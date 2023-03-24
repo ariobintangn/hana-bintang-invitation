@@ -9,6 +9,14 @@ import TravelGuide from "./views/TravelGuide";
 import React, { useState, useEffect } from "react";
 
 function App() {
+  const handleClickScroll = () => {
+    const element = document.getElementById("journey");
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const [elapsedTime, setElapsedTime] = useState(0);
 
   useEffect(() => {
@@ -46,18 +54,18 @@ function App() {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-cgrey1 bg-opacity-60 h-full text-center align-middle w-full">
             <h1 class="absolute text-2xl md:text-5xl text-brokenWhite italic top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
               "Love is composed of a single soul inhabiting two bodies"
-            <p className="text-sm xl:text-xl mt-2">-Aristoteles</p>
+              <p className="text-sm xl:text-xl mt-2">-Aristoteles</p>
             </h1>
           </div>
         </div>
       </div>
 
       {/* TIME CARD COUNTDOWN */}
-      <div className="bg-ccream2 text-gray text-center w-full m-auto">
-        <div className="container">
+      <div className="bg-ccream2 text-gray md:bg-cgreen text-center w-full m-auto">
+        <div className="container md:w-wide md:-mt-32">
           <img
             src="https://irwanclaudia.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvector-cut.3158038d.png&w=3840&q=75"
-            className="absolute -translate-y-20"
+            className="-translate-y-20"
             alt="scrapped paper"
           />
           <div className="text-chocolate p-5 font-semibold">#ARIOHANA</div>
@@ -69,8 +77,10 @@ function App() {
             <div className="border-cgrey2 border-r-2"></div>
             <div></div>
           </div>
-          
-          <div className="text-chocolate pt-5 pb-2 font-bold">Love shared since May 7th, 2022:</div>
+
+          <div className="text-chocolate pt-5 pb-2 font-bold">
+            Love shared since May 7th, 2022:
+          </div>
 
           <div className="container p-4 pb-8 max-w-md m-auto font-semibold">
             <div className="flex -translate-x-3">
@@ -106,7 +116,63 @@ function App() {
       {/* <Journey className="bg-card1 bg-cgrey text-right text-inline"/> */}
 
       {/* JOURNEY */}
-      <div className="">
+
+      <div className="container">
+        <div className="relative container">
+          <img src={opening} alt="main wedding" className="" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-cgrey1 bg-opacity-60 h-full text-center align-middle w-full">
+            <div className="absolute top-60 left-1/4">
+              <h1 className="text-2xl md:text-5xl text-brokenWhite -translate-x-1/2 -translate-y-1/2">
+                Ario
+              </h1>
+              <h1 className="text-2xl md:text-5xl text-brokenWhite -translate-x-1/4 -translate-y-1/2">
+                Bintang
+              </h1>
+              <h1 className="text-2xl md:text-5xl text-brokenWhite pl-5 -translate-x-1/2 -translate-y-1/2">
+                Nugraha
+              </h1>
+            </div>
+            <div className="absolute top-1/2 left-1/2">
+              <h1 className="text-5xl md:text-5xl text-brokenWhite -translate-x-1/2 -translate-y-1/2">
+                &
+              </h1>
+            </div>
+            <div className="absolute bottom-60 left-3/4">
+              <h1 className="text-2xl md:text-5xl text-brokenWhite -translate-x-1/4 -translate-y-1/2">
+                Hana
+              </h1>
+              <h1 className="text-2xl md:text-5xl text-brokenWhite -translate-x-1/2  -translate-y-1/2">
+                Kusumawardhani
+              </h1>
+            </div>
+            <div className="absolute bottom-20 left-1/2">
+              <h1 className="text-md md:text-5xl text-brokenWhite italic -translate-x-1/2 -translate-y-1/2">
+                Let us tell you our love story..
+              </h1>
+            </div>
+            <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
+              <button onClick={handleClickScroll}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="" id="journey">
         <div className="bg-cgrey text-left p-5 flex-col md:w-10/12">
           <div className="text-xl">
             <div className="bg-cgrey py-2 flex items-center">
@@ -123,9 +189,9 @@ function App() {
           </div>
           <p className="text-justify py-2">
             What started as a collaboration for Teman Jakarta's Youtube channel
-            turns out to be the beginning of our story. Not long after meeting for
-            the first time, our connection seems to get stronger with each passing
-            day.
+            turns out to be the beginning of our story. Not long after meeting
+            for the first time, our connection seems to get stronger with each
+            passing day.
           </p>
           <img
             alt="our wedding 2"
@@ -135,18 +201,18 @@ function App() {
           />
           <h1 className="text-2xl my-5 italic text-center">I said "I do"</h1>
           <p className="text-justify py-2">
-            It's not always been an easy road to travel, as with every couple. Yet
-            the more we knew each other, the more everything seems to be aligning
-            together. On that fateful day in August 2021, Ario asked Hana for her
-            hand in marriage, to which she said <b>"I DO!"</b>
+            It's not always been an easy road to travel, as with every couple.
+            Yet the more we knew each other, the more everything seems to be
+            aligning together. On that fateful day in August 2021, Ario asked
+            Hana for her hand in marriage, to which she said <b>"I DO!"</b>
           </p>
         </div>
       </div>
 
       {/* GUIDE*/}
-      {/* <div className="bg-cgrey2 text-gray relative flex justify-center h-full object-contain">
+      <div className="bg-cgrey2 text-gray relative flex flex-col justify-center items-center object-contain">
         <div className="w-11/12">
-          <div className="bg-cpeach2 rounded-b-full relative text-center p-5 w-full z-10">
+          <div className="bg-cpeach2 rounded-b-full relative text-center p-5 w-full z-10 pb-10">
             <h1 className="py-2 text-2xl mb-3">
               WEDDING
               <br />
@@ -162,16 +228,15 @@ function App() {
             <p className="italic text-sm">*All times are in WIB</p>
           </div>
 
-          <div className="bg-cpeach rounded-t-full text-center p-5 absolute top-1/4 w-11/12">
-            <div className="mt-10 p-10">
-              <h1>Friday, May 6, 2022</h1>
+          {/*----------------SCHEDULE-----------------*/}
+
+          <div className="bg-cpeach rounded-t-full text-center p-5  top-1/4 -mt-24">
+            <div className="mt-10 pt-16">
+              <h1 >Friday, May 6, 2022</h1>
               <button className="border-cgrey border bg-cgrey3 rounded-xl shadow-md p-1 hover:bg-cgrey hover:text-white">
                 ADD TO CALENDAR
               </button>
             </div>
-          </div>
-
-          <div className="container bg-cpeach rounded text-center bottom-0 top-96 absolute w-11/12 flex-col flex-wrap">
             <div className="left-1/2 items-center object-center">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/f/fd/20_airtransportation_inv.svg"
@@ -227,10 +292,69 @@ function App() {
               <p className="text-xs">12.00 ONWARDS</p>
             </div>
           </div>
+
+          {/* <div className="container bg-cpeach rounded text-center bottom-0 top-96 absolute w-11/12 flex-col flex-wrap"> */}
+            {/* <div className="left-1/2 items-center object-center">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fd/20_airtransportation_inv.svg"
+                alt="plane"
+                className="w-12 m-auto"
+              />
+            </div>
+            <div className="">
+              <p className="text-md">FAMILY ARRIVAL & CHECK IN</p>
+              <p className="text-sm">GUEST HOUSE YOGYAKARTA, YOGYAKARTA</p>
+              <p className="text-xs">12.00 ONWARDS</p>
+            </div>
+            <div className="left-1/2 items-center object-center mt-4">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fd/20_airtransportation_inv.svg"
+                className="w-12 m-auto"
+                alt="plane"
+              />
+            </div>
+            <div className="">
+              <p>FAMILY WELCOME DINNER</p>
+              <p className="text-xs">12.00 ONWARDS</p>
+            </div>
+          
+            <div className="mt-10 p-10">
+              <h1>Saturday, May 6, 2022</h1>
+              <button className="border-cgrey border bg-cgrey3 rounded-xl shadow-md p-1 hover:bg-cgrey hover:text-white">
+                ADD TO CALENDAR
+              </button>
+            </div>
+
+            <div className="left-1/2 items-center object-center">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fd/20_airtransportation_inv.svg"
+                alt="plane"
+                className="w-12 m-auto"
+              />
+            </div>
+            <div className="">
+              <p className="text-md">FAMILY ARRIVAL & CHECK IN</p>
+              <p className="text-sm">GUEST HOUSE YOGYAKARTA, YOGYAKARTA</p>
+              <p className="text-xs">12.00 ONWARDS</p>
+            </div>
+            <div className="left-1/2 items-center object-center mt-4">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fd/20_airtransportation_inv.svg"
+                className="w-12 m-auto"
+                alt="plane"
+              />
+            </div>
+            <div className="">
+              <p>FAMILY WELCOME DINNER</p>
+              <p className="text-xs">12.00 ONWARDS</p>
+            </div> */}
+          {/* </div> */}
         </div>
-      </div> */}
+      </div>
       {/* TRAVEL GUIDE */}
+      
       <TravelGuide />
+      
 
       <footer className="bg-cgrey1 text-center">
         <h1 className="p-5 w-60 m-auto">

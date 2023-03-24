@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      container: {
+        // padding: "2rem",
+        // center: true
+      },
       colors: {
         card1: "rgba(255,0,0,1)",
         cgrey: "#6B717E",
@@ -19,7 +23,7 @@ module.exports = {
         cpeach2: "#f7f5f3",
         ccream: "#f0eeeb",
         ccream2: "#e0d4c4",
-        cgreen: "#D4DCCD",
+        cgreen: "#D4DCCD",    
       },
       textColor: {
         brokenWhite: "#f5f3f1",
