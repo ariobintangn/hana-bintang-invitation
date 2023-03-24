@@ -1,4 +1,5 @@
 import "../App.css";
+import bus from "../assets/bus.svg"
 
 function TravelGuide() {
   return (
@@ -44,9 +45,9 @@ function TravelGuide() {
 
           <div className="w-80 m-auto p-3">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/BSicon_BUS.svg/500px-BSicon_BUS.svg.png"
-              alt="hotel"
-              className="m-auto w-12 pb-2 bg-white rounded-full"
+              src={bus}
+              alt="bus"
+              className="m-auto w-12 p-1 bg-white rounded-full"
             />
             <h1 className="p-1">COMPLIMENTARY SHUTTLE</h1>
             <p className="pb-3 text-sm">

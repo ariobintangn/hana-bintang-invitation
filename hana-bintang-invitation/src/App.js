@@ -1,4 +1,6 @@
 import "./App.css";
+import plane from "./assets/plane.svg";
+import bus from "./assets/bus.svg";
 // import Journey from "./views/journey";
 // import paper from "./assets/paper.png";
 // import Guide from "./views/TravelGuide";
@@ -232,14 +234,15 @@ function App() {
 
           <div className="bg-cpeach rounded-t-full text-center p-5  top-1/4 -mt-24">
             <div className="mt-10 pt-16">
-              <h1 >Friday, May 6, 2022</h1>
-              <button className="border-cgrey border bg-cgrey3 rounded-xl shadow-md p-1 hover:bg-cgrey hover:text-white">
+              <h1>Friday, May 6, 2022</h1>
+              <button className="border-cgrey border bg-cgrey3 rounded-xl shadow-md mt-2 p-1 hover:bg-cgrey hover:text-white">
                 ADD TO CALENDAR
               </button>
             </div>
-            <div className="left-1/2 items-center object-center">
+            <div className="left-1/2 items-center object-center my-4">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fd/20_airtransportation_inv.svg"
+                src={plane}
+                // src="https://upload.wikimedia.org/wikipedia/commons/f/fd/20_airtransportation_inv.svg"
                 alt="plane"
                 className="w-12 m-auto"
               />
@@ -260,10 +263,12 @@ function App() {
               <p>FAMILY WELCOME DINNER</p>
               <p className="text-xs">12.00 ONWARDS</p>
             </div>
-          
-            <div className="mt-10 p-10">
+
+            {/* -------------------- */}
+
+            <div className="mt-10 py-10 mx-16 border-t border-black">
               <h1>Saturday, May 6, 2022</h1>
-              <button className="border-cgrey border bg-cgrey3 rounded-xl shadow-md p-1 hover:bg-cgrey hover:text-white">
+              <button className="border-cgrey border bg-cgrey3 rounded-xl shadow-md mt-2 p-1 hover:bg-cgrey hover:text-white">
                 ADD TO CALENDAR
               </button>
             </div>
@@ -294,7 +299,7 @@ function App() {
           </div>
 
           {/* <div className="container bg-cpeach rounded text-center bottom-0 top-96 absolute w-11/12 flex-col flex-wrap"> */}
-            {/* <div className="left-1/2 items-center object-center">
+          {/* <div className="left-1/2 items-center object-center">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/f/fd/20_airtransportation_inv.svg"
                 alt="plane"
@@ -352,9 +357,8 @@ function App() {
         </div>
       </div>
       {/* TRAVEL GUIDE */}
-      
+
       <TravelGuide />
-      
 
       <footer className="bg-cgrey1 text-center">
         <h1 className="p-5 w-60 m-auto">
