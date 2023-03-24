@@ -1,6 +1,9 @@
 import "./App.css";
 import plane from "./assets/plane.svg";
-import bus from "./assets/bus.svg";
+import ring from "./assets/rings.svg";
+import dinner from "./assets/dinner.svg"
+import location from "./assets/location.svg";
+// import bus from "./assets/bus.svg";
 // import Journey from "./views/journey";
 // import paper from "./assets/paper.png";
 // import Guide from "./views/TravelGuide";
@@ -46,12 +49,10 @@ function App() {
   const minutes = Math.floor((elapsedTime % (60 * 60 * 1000)) / (60 * 1000));
   const seconds = Math.floor((elapsedTime % (60 * 1000)) / 1000);
   return (
-    <div className="bg-cgrey h-screen text-brokenWhite flex-col flex-wrap">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-
+    <div className="bg-cgrey h-screen text-brokenWhite flex-col flex-wrap min-w-screen">
       {/* MAIN IMAGE */}
-      <div className="container">
-        <div className="relative container">
+      <div className="">
+        <div className="relative">
           <img src={opening} alt="main wedding" className="" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-cgrey1 bg-opacity-60 h-full text-center align-middle w-full">
             <h1 class="absolute text-2xl md:text-5xl text-brokenWhite italic top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -64,7 +65,7 @@ function App() {
 
       {/* TIME CARD COUNTDOWN */}
       <div className="bg-ccream2 text-gray md:bg-cgreen text-center w-full m-auto">
-        <div className="container md:w-wide md:-mt-32">
+        <div className="md:w-wide md:-mt-32">
           <img
             src="https://irwanclaudia.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvector-cut.3158038d.png&w=3840&q=75"
             className="-translate-y-20"
@@ -84,7 +85,7 @@ function App() {
             Love shared since May 7th, 2022:
           </div>
 
-          <div className="container p-4 pb-8 max-w-md m-auto font-semibold">
+          <div className="p-4 pb-8 max-w-md m-auto font-semibold">
             <div className="flex -translate-x-3">
               <div className="bg-cgreen w-1/6 rounded-full text-sm p-3 translate-x-9 z-50">
                 {years}
@@ -119,8 +120,8 @@ function App() {
 
       {/* JOURNEY */}
 
-      <div className="container">
-        <div className="relative container">
+      <div className="">
+        <div className="relative">
           <img src={opening} alt="main wedding" className="" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-cgrey1 bg-opacity-60 h-full text-center align-middle w-full">
             <div className="absolute top-60 left-1/4">
@@ -254,7 +255,7 @@ function App() {
             </div>
             <div className="left-1/2 items-center object-center mt-4">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fd/20_airtransportation_inv.svg"
+                src={dinner}
                 className="w-12 m-auto"
                 alt="plane"
               />
@@ -266,7 +267,7 @@ function App() {
 
             {/* -------------------- */}
 
-            <div className="mt-10 py-10 mx-16 border-t border-black">
+            <div className="mt-10 py-10 mx-16 border-t-2 border-cgrey">
               <h1>Saturday, May 6, 2022</h1>
               <button className="border-cgrey border bg-cgrey3 rounded-xl shadow-md mt-2 p-1 hover:bg-cgrey hover:text-white">
                 ADD TO CALENDAR
@@ -274,15 +275,44 @@ function App() {
             </div>
 
             <div className="left-1/2 items-center object-center">
+              <img src={ring} alt="plane" className="w-12 m-auto" />
+            </div>
+            <div className="">
+              <p>Holy Matrimony</p>
+              <p className="text-xs">16.30 WIB</p>
+              <a
+                className="text-xs underline"
+                href="https://goo.gl/maps/ZFqEnquZnH5D7jqK9"
+                target="_blank"
+              >
+                Secret Garden Yogyakarta
+                <img
+                  src={location}
+                  width="15px"
+                  className="inline -translate-y-1"
+                />
+              </a>
+            </div>
+            <div className="left-1/2 items-center object-center mt-4">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fd/20_airtransportation_inv.svg"
-                alt="plane"
+                src={dinner}
                 className="w-12 m-auto"
+                alt="plane"
               />
             </div>
             <div className="">
-              <p className="text-md">FAMILY ARRIVAL & CHECK IN</p>
-              <p className="text-sm">GUEST HOUSE YOGYAKARTA, YOGYAKARTA</p>
+              <p>FAMILY WELCOME DINNER</p>
+              <p className="text-xs">12.00 ONWARDS</p>
+            </div>
+            <div className="left-1/2 items-center object-center mt-4">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fd/20_airtransportation_inv.svg"
+                className="w-12 m-auto"
+                alt="plane"
+              />
+            </div>
+            <div className="">
+              <p>FAMILY WELCOME DINNER</p>
               <p className="text-xs">12.00 ONWARDS</p>
             </div>
             <div className="left-1/2 items-center object-center mt-4">
@@ -298,7 +328,7 @@ function App() {
             </div>
           </div>
 
-          {/* <div className="container bg-cpeach rounded text-center bottom-0 top-96 absolute w-11/12 flex-col flex-wrap"> */}
+          {/* <div className=" bg-cpeach rounded text-center bottom-0 top-96 absolute w-11/12 flex-col flex-wrap"> */}
           {/* <div className="left-1/2 items-center object-center">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/f/fd/20_airtransportation_inv.svg"
