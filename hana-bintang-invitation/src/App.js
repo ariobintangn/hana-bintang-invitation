@@ -1,7 +1,7 @@
 import "./App.css";
 import plane from "./assets/plane.svg";
 import ring from "./assets/rings.svg";
-import dinner from "./assets/dinner.svg"
+import dinner from "./assets/dinner.svg";
 import location from "./assets/location.svg";
 // import bus from "./assets/bus.svg";
 // import Journey from "./views/journey";
@@ -64,11 +64,11 @@ function App() {
       </div>
 
       {/* TIME CARD COUNTDOWN */}
-      <div className="bg-ccream2 text-gray md:bg-cgreen text-center w-full m-auto">
+      <div className="bg-ccream2 text-gray md:bg-cgreen lg:bg-cgrey1 xl:bg-cgrey text-center w-full m-auto">
         <div className="md:w-wide md:-mt-32">
           <img
             src="https://irwanclaudia.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvector-cut.3158038d.png&w=3840&q=75"
-            className="-translate-y-20"
+            className="-translate-y-20 md:translate-y-1 md:w-full"
             alt="scrapped paper"
           />
           <div className="text-chocolate p-5 font-semibold">#ARIOHANA</div>
@@ -175,8 +175,10 @@ function App() {
         </div>
       </div>
 
+      {/*JOURNEY */}
+
       <div className="" id="journey">
-        <div className="bg-cgrey text-left p-5 flex-col md:w-10/12">
+        <div className="bg-cgrey text-left p-5 flex-col">
           <div className="text-xl">
             <div className="bg-cgrey py-2 flex items-center">
               <p>OUR JOURNEY STARTED</p>
@@ -254,11 +256,7 @@ function App() {
               <p className="text-xs">12.00 ONWARDS</p>
             </div>
             <div className="left-1/2 items-center object-center mt-4">
-              <img
-                src={dinner}
-                className="w-12 m-auto"
-                alt="plane"
-              />
+              <img src={dinner} className="w-12 m-auto" alt="plane" />
             </div>
             <div className="">
               <p>FAMILY WELCOME DINNER</p>
@@ -294,11 +292,7 @@ function App() {
               </a>
             </div>
             <div className="left-1/2 items-center object-center mt-4">
-              <img
-                src={dinner}
-                className="w-12 m-auto"
-                alt="plane"
-              />
+              <img src={dinner} className="w-12 m-auto" alt="plane" />
             </div>
             <div className="">
               <p>FAMILY WELCOME DINNER</p>
