@@ -177,7 +177,7 @@ function App() {
         </div>
       </div>
 
-      {/*JOURNEY */}
+      {/*JOURNEY 2*/}
 
       <div className="" id="journey">
         <div className="bg-cgrey text-left p-5 flex-col md:p-16 xl:px-36">
@@ -322,6 +322,123 @@ function App() {
       {/* TRAVEL GUIDE */}
 
       <TravelGuide />
+
+      {/*QNA*/}
+
+      <div className="bg-ccream text-gray">
+        <div className="p-10" id="QNAContainer">
+          <div className="text-4xl">QUESTION AND ANSWER</div>
+          <div className="container mt-12" id="qnaItemsContainer">
+            <div className="flex flex-row  border-b border-black pb-4">
+              <div id="container-header" className="text-3xl mr-2">
+                01
+              </div>
+              <div id="container-header" className="pt-1 text-lg">
+                WHAT KIND OF OUTFIT SHOULD / SHOULDN'T I WEAR?
+              </div>
+            </div>
+            <div id="container-content" className="pt-6">
+              Be handsome and beautiful, being ugly is not tolerated (Just
+              Kidding). Calling all Ladies! Long dresses are preferred and
+              please wear comfortable shoes. Get ready to be dancing all night
+              with booze involved.
+            </div>
+            <div className="mt-10">
+              Here are the color options for your dress
+              <br />
+              <div className="flex flex-row mt-6 justify-center -translate-x-2">
+                <div className="h-10 w-10 mx-2 bg-gray-800 rounded-full"></div>
+                <div className="h-10 w-10 mx-2 bg-gray-600 rounded-full"></div>
+                <div className="h-10 w-10 mx-2 bg-amber-900 rounded-full"></div>
+                <div className="h-10 w-10 mx-2 bg-yellow-600  rounded-full"></div>
+                <div className="h-10 w-10 mx-2 bg-red-100 rounded-full"></div>
+                <div className="h-10 w-10 mx-2 bg-amber-50 rounded-full"></div>
+              </div>
+              <p className="mt-10 mb-5">
+                For the Gentlemen, suit up. <br />
+              </p>
+              <p>
+                Kindly leave your batik, jeans, t-shirt, and slippers at home.
+              </p>
+            </div>
+          </div>
+
+          <div className="container mt-12" id="qnaItemsContainer">
+            <div className="flex flex-row border-b border-black pb-4">
+              <div id="container-header" className="text-3xl mr-2">
+                02
+              </div>
+              <div id="container-header" className="pt-1 text-lg">
+                CAN I BRING A DATE OR +1?
+              </div>
+            </div>
+            <div id="container-content" className="pt-6">
+              Unless it is stated in the invitation message or communicated
+              privately, this invitation is only valid for 1 pax.
+            </div>
+          </div>
+
+          <div className="container mt-12" id="qnaItemsContainer">
+            <div className="flex flex-row border-b border-black pb-4">
+              <div id="container-header" className="text-3xl mr-2">
+                03
+              </div>
+              <div id="container-header" className="pt-1 text-lg">
+                WILL THE WEDDING BE INDOOR OR OUTDOOR?
+              </div>
+            </div>
+            <div id="container-content" className="pt-6">
+              Holy matrimony will be held indoor, reception and party will be
+              held outdoor.
+            </div>
+          </div>
+
+          <div className="container mt-12" id="qnaItemsContainer">
+            <div className="flex flex-row border-b border-black pb-4">
+              <div id="container-header" className="text-3xl mr-2">
+                04
+              </div>
+              <div id="container-header" className="pt-1 text-lg">
+                WHAT ACCOMODATIONS ARE PROVIDED?
+              </div>
+            </div>
+            <div id="container-content" className="pt-6">
+              Flight ticket will not be provided. Hotel and round trip shuttle
+              bus will be provided. Please check out the "Travel Guide" section.
+            </div>
+          </div>
+
+          <div className="container mt-12" id="qnaItemsContainer">
+            <div className="flex flex-row border-b border-black pb-4">
+              <div id="container-header" className="text-3xl mr-2">
+                05
+              </div>
+              <div id="container-header" className="pt-1 text-lg">
+                WHAT TYPE OF WEDDING GIFT SHOULD I BRING?
+              </div>
+            </div>
+            <div id="container-content" className="pt-6">
+              Your presence at our wedding is the greatest gift of all. However,
+              if you wish to honour us with a special something, cash / small
+              gift will be accepted with full gratitude.
+            </div>
+          </div>
+
+          <div className="container mt-12" id="qnaItemsContainer">
+            <div className="flex flex-row border-b border-black pb-4">
+              <div id="container-header" className="text-3xl mr-2">
+                06
+              </div>
+              <div id="container-header" className="pt-1 text-lg">
+                WHOM SHOULD I REACH FOR FURTHER QUESTIONS?
+              </div>
+            </div>
+            <div id="container-content" className="pt-6">
+              Ario and Hana
+            </div>
+          </div>
+        </div>
+      </div>
 
       <footer className="bg-cgrey1 text-center">
         <h1 className="p-5 w-60 m-auto">
