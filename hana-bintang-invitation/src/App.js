@@ -122,36 +122,36 @@ function App() {
 
       {/* JOURNEY */}
 
-      <div className="">
+      <div className="text-brokenWhite">
         <div className="relative">
           <img src={opening} alt="main wedding" className="" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-cgrey1 bg-opacity-60 h-full text-center align-middle w-full">
-            <div className="absolute top-60 left-1/4">
-              <h1 className="text-2xl md:text-5xl text-brokenWhite -translate-x-1/2 -translate-y-1/2">
+            <div className="absolute top-60 md:top-80 xl:top-1/2 xl:-translate-y-80 left-1/4">
+              <h1 className="text-2xl md:text-5xl xl:text-7xl  -translate-x-1/2 -translate-y-1/2">
                 Ario
               </h1>
-              <h1 className="text-2xl md:text-5xl text-brokenWhite -translate-x-1/4 -translate-y-1/2">
+              <h1 className="text-2xl md:text-5xl xl:text-7xl  -translate-x-1/4 -translate-y-1/2">
                 Bintang
               </h1>
-              <h1 className="text-2xl md:text-5xl text-brokenWhite pl-5 -translate-x-1/2 -translate-y-1/2">
+              <h1 className="text-2xl md:text-5xl xl:text-7xl  pl-5 -translate-x-1/2 -translate-y-1/2">
                 Nugraha
               </h1>
             </div>
             <div className="absolute top-1/2 left-1/2">
-              <h1 className="text-5xl md:text-5xl text-brokenWhite -translate-x-1/2 -translate-y-1/2">
+              <h1 className="text-5xl md:text-5xl  -translate-x-1/2 -translate-y-1/2">
                 &
               </h1>
             </div>
-            <div className="absolute bottom-60 left-3/4">
-              <h1 className="text-2xl md:text-5xl text-brokenWhite -translate-x-1/4 -translate-y-1/2">
+            <div className="absolute bottom-60 md:bottom-80 xl:top-1/2 xl:translate-y-60  left-3/4">
+              <h1 className="text-2xl md:text-5xl xl:text-7xl  -translate-x-1/4 -translate-y-1/2">
                 Hana
               </h1>
-              <h1 className="text-2xl md:text-5xl text-brokenWhite -translate-x-1/2  -translate-y-1/2">
+              <h1 className="text-2xl md:text-5xl xl:text-7xl  -translate-x-1/2  -translate-y-1/2">
                 Kusumawardhani
               </h1>
             </div>
             <div className="absolute bottom-20 left-1/2">
-              <h1 className="text-md md:text-5xl text-brokenWhite italic -translate-x-1/2 -translate-y-1/2">
+              <h1 className="text-md md:text-3xl xl:text-4xl italic -translate-x-1/2 -translate-y-1/2">
                 Let us tell you our love story..
               </h1>
             </div>
@@ -209,8 +209,10 @@ function App() {
           <h1 className="text-2xl md:text-3xl my-5 italic text-center">
             I said "I do"
           </h1>
-          <p className="md:text-xl text-justify py-2 xl:text-left xl:pr
-          -36 xl:pt-20 xl:text-2xl">
+          <p
+            className="md:text-xl text-justify py-2 xl:text-left xl:pr
+          -36 xl:pt-20 xl:text-2xl"
+          >
             It's not always been an easy road to travel, as with every couple.
             Yet the more we knew each other, the more everything seems to be
             aligning together. On that fateful day in August 2021, Ario asked
