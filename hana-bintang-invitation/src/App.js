@@ -180,9 +180,9 @@ function App() {
       {/*JOURNEY */}
 
       <div className="" id="journey">
-        <div className="bg-cgrey text-left p-5 flex-col">
-          <div className="text-xl">
-            <div className="bg-cgrey py-2 flex items-center">
+        <div className="bg-cgrey text-left p-5 flex-col md:p-16 xl:px-36">
+          <div className="text-2xl md:text-3xl xl:text-5xl">
+            <div className="py-2 flex items-center">
               <p>OUR JOURNEY STARTED</p>
               <img
                 alt="our wedding"
@@ -192,9 +192,9 @@ function App() {
               />
             </div>
             <p className="py-2">WHEN WE PLAYED MUSIC</p>
-            <p className="py-2 italic">Together</p>
+            <p className="py-8 italic">Together</p>
           </div>
-          <p className="text-justify py-2">
+          <p className="text-justify py-2 md:text-xl xl:pr-48 xl:py-20 xl:text-2xl">
             What started as a collaboration for Teman Jakarta's Youtube channel
             turns out to be the beginning of our story. Not long after meeting
             for the first time, our connection seems to get stronger with each
@@ -206,8 +206,11 @@ function App() {
             // style={{ maxWidth: "80%", borderRadius: "30%"}}
             className="h-96 w-full object-cover rounded-full p-5"
           />
-          <h1 className="text-2xl my-5 italic text-center">I said "I do"</h1>
-          <p className="text-justify py-2">
+          <h1 className="text-2xl md:text-3xl my-5 italic text-center">
+            I said "I do"
+          </h1>
+          <p className="md:text-xl text-justify py-2 xl:text-left xl:pr
+          -36 xl:pt-20 xl:text-2xl">
             It's not always been an easy road to travel, as with every couple.
             Yet the more we knew each other, the more everything seems to be
             aligning together. On that fateful day in August 2021, Ario asked
