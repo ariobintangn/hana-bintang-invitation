@@ -215,10 +215,10 @@ function App() {
       </div>
 
       {/* GUIDE*/}
-      <div className="bg-cgrey2 text-gray relative flex flex-col justify-center items-center object-contain">
-        <div className="w-11/12">
-          <div className="bg-cpeach2 rounded-b-full relative text-center p-5 w-full z-10 pb-10">
-            <h1 className="py-2 text-2xl mb-3">
+      <div className="bg-cgrey2 text-gray relative flex flex-col justify-center items-center object-contain md:text-xl">
+        <div className="w-11/12 md:w-7/12">
+          <div className="bg-cpeach2 rounded-b-full relative text-center p-5 w-full z-10 pb-10 md:h-96 md:pt-16 ">
+            <h1 className="py-2 text-2xl mb-3 md:text-5xl">
               WEDDING
               <br />
               WEEKEND
@@ -235,7 +235,7 @@ function App() {
 
           {/*----------------SCHEDULE-----------------*/}
 
-          <div className="bg-cpeach rounded-t-full text-center p-5  top-1/4 -mt-24">
+          <div className="bg-cpeach rounded-t-full text-center p-5  top-1/4 -mt-24 md:p-24">
             <div className="mt-10 pt-16">
               <h1>Friday, May 6, 2022</h1>
               <button className="border-cgrey border bg-cgrey3 rounded-xl shadow-md mt-2 p-1 hover:bg-cgrey hover:text-white">
