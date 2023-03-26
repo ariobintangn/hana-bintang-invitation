@@ -325,8 +325,23 @@ function App() {
 
       {/*QNA*/}
 
-      <div className="bg-ccream text-gray">
-        <div className="p-10 md:p-24 lg:p-48 xl:p-80" id="QNAContainer">
+      <div className="bg-ccream text-gray flex flex-col md:flex-row md:h-full">
+
+        <div
+         className="md:bg-gradient-to-r md:from-cgrey3 md:through md:to-ccream2 " 
+         >
+          <div className="container p-5 m-auto justify-center align-middle items-center flex flex-row md:flex-col">
+            <img src={opening}
+            className="rounded-2xl object-contain max-h-96"
+            />
+            <img src={journey}
+            className="rounded-2xl object-contain"
+            />
+
+          </div>
+        </div>
+
+        <div className="p-10 md:p-12 lg:px-24 xl:ml-36 xl: md:overflow-y-auto" id="QNAContainer">
           <div className="text-4xl">QUESTION AND ANSWER</div>
           <div className="container mt-12" id="qnaItemsContainer">
             <div className="flex flex-row  border-b border-black pb-4">
