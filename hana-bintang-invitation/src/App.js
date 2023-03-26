@@ -70,7 +70,7 @@ function App() {
         <div className="md:w-wide md:-mt-32">
           <img
             src="https://irwanclaudia.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvector-cut.3158038d.png&w=3840&q=75"
-            className="-translate-y-20 md:translate-y-1 md:w-full"
+            className="-translate-y-20 md:translate-y-1 xl:-translate-y-14 md:w-full"
             alt="scrapped paper"
           />
           <div className="text-chocolate p-5 font-semibold">#ARIOHANA</div>
