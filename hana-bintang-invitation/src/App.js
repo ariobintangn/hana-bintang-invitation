@@ -326,7 +326,7 @@ function App() {
       {/*QNA*/}
 
       <div className="bg-ccream text-gray">
-        <div className="p-10" id="QNAContainer">
+        <div className="p-10 md:p-24 lg:p-48 xl:p-80" id="QNAContainer">
           <div className="text-4xl">QUESTION AND ANSWER</div>
           <div className="container mt-12" id="qnaItemsContainer">
             <div className="flex flex-row  border-b border-black pb-4">
