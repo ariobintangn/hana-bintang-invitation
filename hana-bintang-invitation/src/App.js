@@ -3,6 +3,8 @@ import plane from "./assets/plane.svg";
 import ring from "./assets/rings.svg";
 import dinner from "./assets/dinner.svg";
 import location from "./assets/location.svg";
+import party from "./assets/party.svg";
+import party2 from "./assets/party2.svg";
 // import bus from "./assets/bus.svg";
 // import Journey from "./views/journey";
 // import paper from "./assets/paper.png";
@@ -218,7 +220,7 @@ function App() {
       <div className="bg-cgrey2 text-gray relative flex flex-col justify-center items-center object-contain md:text-xl">
         <div className="w-11/12 md:w-7/12">
           <div className="bg-cpeach2 rounded-b-full relative text-center p-5 w-full z-10 pb-10 md:h-96 md:pt-16 ">
-            <h1 className="py-2 text-2xl mb-3 md:text-5xl">
+            <h1 className="py-2 text-4xl mb-3 md:text-5xl">
               WEDDING
               <br />
               WEEKEND
@@ -251,7 +253,7 @@ function App() {
               />
             </div>
             <div className="">
-              <p className="text-md">FAMILY ARRIVAL & CHECK IN</p>
+              <p className="text-md">Family Arrival & Check In</p>
               <p className="text-sm">GUEST HOUSE YOGYAKARTA, YOGYAKARTA</p>
               <p className="text-xs">12.00 ONWARDS</p>
             </div>
@@ -259,14 +261,30 @@ function App() {
               <img src={dinner} className="w-12 m-auto" alt="plane" />
             </div>
             <div className="">
-              <p>FAMILY WELCOME DINNER</p>
-              <p className="text-xs">12.00 ONWARDS</p>
+              <p>Family Welcome Dinner</p>
+              <p className="text-xs">18.30 WIB</p>
             </div>
 
             {/* -------------------- */}
 
             <div className="mt-10 py-10 mx-16 border-t-2 border-cgrey">
               <h1>Saturday, May 6, 2022</h1>
+              <div className="my-2">
+                <a
+                  className="text-xs underline"
+                  href="https://goo.gl/maps/ZFqEnquZnH5D7jqK9"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Secret Garden Yogyakarta
+                  <img
+                    src={location}
+                    width="15px"
+                    className="inline -translate-y-1"
+                    alt="location"
+                  />
+                </a>
+              </div>
               <button className="border-cgrey border bg-cgrey3 rounded-xl shadow-md mt-2 p-1 hover:bg-cgrey hover:text-white">
                 ADD TO CALENDAR
               </button>
@@ -278,106 +296,22 @@ function App() {
             <div className="">
               <p>Holy Matrimony</p>
               <p className="text-xs">16.30 WIB</p>
-              <a
-                className="text-xs underline"
-                href="https://goo.gl/maps/ZFqEnquZnH5D7jqK9"
-                target="_blank"
-              >
-                Secret Garden Yogyakarta
-                <img
-                  src={location}
-                  width="15px"
-                  className="inline -translate-y-1"
-                />
-              </a>
             </div>
             <div className="left-1/2 items-center object-center mt-4">
-              <img src={dinner} className="w-12 m-auto" alt="plane" />
+              <img src={party} className="w-12 m-auto" alt="party" />
             </div>
             <div className="">
-              <p>FAMILY WELCOME DINNER</p>
-              <p className="text-xs">12.00 ONWARDS</p>
+              <p>Party & Reception</p>
+              <p className="text-xs">17.30 ONWARDS</p>
             </div>
             <div className="left-1/2 items-center object-center mt-4">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fd/20_airtransportation_inv.svg"
-                className="w-12 m-auto"
-                alt="plane"
-              />
+              <img src={party2} className="w-12 m-auto" alt="party2" />
             </div>
             <div className="">
-              <p>FAMILY WELCOME DINNER</p>
-              <p className="text-xs">12.00 ONWARDS</p>
-            </div>
-            <div className="left-1/2 items-center object-center mt-4">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fd/20_airtransportation_inv.svg"
-                className="w-12 m-auto"
-                alt="plane"
-              />
-            </div>
-            <div className="">
-              <p>FAMILY WELCOME DINNER</p>
-              <p className="text-xs">12.00 ONWARDS</p>
+              <p>After Party</p>
+              <p className="text-xs">21.00 ONWARDS</p>
             </div>
           </div>
-
-          {/* <div className=" bg-cpeach rounded text-center bottom-0 top-96 absolute w-11/12 flex-col flex-wrap"> */}
-          {/* <div className="left-1/2 items-center object-center">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fd/20_airtransportation_inv.svg"
-                alt="plane"
-                className="w-12 m-auto"
-              />
-            </div>
-            <div className="">
-              <p className="text-md">FAMILY ARRIVAL & CHECK IN</p>
-              <p className="text-sm">GUEST HOUSE YOGYAKARTA, YOGYAKARTA</p>
-              <p className="text-xs">12.00 ONWARDS</p>
-            </div>
-            <div className="left-1/2 items-center object-center mt-4">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fd/20_airtransportation_inv.svg"
-                className="w-12 m-auto"
-                alt="plane"
-              />
-            </div>
-            <div className="">
-              <p>FAMILY WELCOME DINNER</p>
-              <p className="text-xs">12.00 ONWARDS</p>
-            </div>
-          
-            <div className="mt-10 p-10">
-              <h1>Saturday, May 6, 2022</h1>
-              <button className="border-cgrey border bg-cgrey3 rounded-xl shadow-md p-1 hover:bg-cgrey hover:text-white">
-                ADD TO CALENDAR
-              </button>
-            </div>
-
-            <div className="left-1/2 items-center object-center">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fd/20_airtransportation_inv.svg"
-                alt="plane"
-                className="w-12 m-auto"
-              />
-            </div>
-            <div className="">
-              <p className="text-md">FAMILY ARRIVAL & CHECK IN</p>
-              <p className="text-sm">GUEST HOUSE YOGYAKARTA, YOGYAKARTA</p>
-              <p className="text-xs">12.00 ONWARDS</p>
-            </div>
-            <div className="left-1/2 items-center object-center mt-4">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fd/20_airtransportation_inv.svg"
-                className="w-12 m-auto"
-                alt="plane"
-              />
-            </div>
-            <div className="">
-              <p>FAMILY WELCOME DINNER</p>
-              <p className="text-xs">12.00 ONWARDS</p>
-            </div> */}
-          {/* </div> */}
         </div>
       </div>
       {/* TRAVEL GUIDE */}
