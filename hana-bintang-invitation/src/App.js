@@ -8,15 +8,10 @@ import location from "./assets/location.svg";
 import party from "./assets/party.svg";
 import party2 from "./assets/party2.svg";
 import sc1 from "./assets/sc1.jpeg"
-import sc2 from "./assets/sc2.jpeg"
 import sc3 from "./assets/sc3.jpeg"
-import sc4 from "./assets/sc4.jpeg"
 import sc5 from "./assets/sc5.jpeg"
 import sc6 from "./assets/sc6.jpeg"
-import sc7 from "./assets/sc7.jpeg"
-import sc8 from "./assets/sc8.jpeg"
-import b1 from "./assets/b1.jpeg"
-import b2 from "./assets/b2.jpeg"
+
 // import bus from "./assets/bus.svg";
 // import Journey from "./views/journey";
 // import paper from "./assets/paper.png";
