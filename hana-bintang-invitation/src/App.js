@@ -1,5 +1,6 @@
 import "./App.css";
 import plane from "./assets/plane.svg";
+import bus from "./assets/bus.svg";
 import ring from "./assets/rings.svg";
 import dinner from "./assets/dinner.svg";
 import location from "./assets/location.svg";
@@ -319,29 +320,87 @@ function App() {
           </div>
         </div>
       </div>
+
       {/* TRAVEL GUIDE */}
 
-      <TravelGuide />
+      <div className="text-brokenWhite bg-cgrey1 w-full text-center md:h-full md:py-36">
+        {/* <div className="container m-auto"> */}
+        <h1 className="text-3xl p-5 md:pb-24 md:pt-0 md:text-7xl">TRAVEL GUIDE</h1>
+
+        <div className="md:container md:w-11/12 xl:w-3/4 md:flex md:flex-row md:m-auto md:overflow-x-auto xl:translate-x-20 md:pt-12">
+          <div>
+            <div className="w-80 m-auto p-3">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d2/White_plane_icon.svg"
+                alt="plane"
+                className="m-auto w-12 pb-2"
+              />
+              <h1 className="p-1">GETTING THERE</h1>
+              <p className="pb-3">
+                We encourage you to book your own flight ticket to Yogyakarta
+              </p>
+            </div>
+          </div>
+          <div>
+            <div className="w-80 m-auto p-3">
+              <img
+                src="https://www.pngfind.com/pngs/m/144-1449175_png-file-svg-logo-hotel-vector-png-transparent.png"
+                alt="hotel"
+                className="m-auto w-12 pb-2 rounded-md"
+              />
+              <h1 className="p-1 pb-3">COMPLIMENTARY ACCOMODATION</h1>
+              <p className="pb-1">
+                <b>Friends</b>
+              </p>
+              <p className="pb-1">Sheraton Hotel, Yogyakarta</p>
+              <p className="pb-3 text-sm italic">
+                2 Nights (May 6 - May 7, 2022)
+              </p>
+              <p className="pb-1">
+                <b>Family</b>
+              </p>
+              <p className="pb-1">Royal Ambarukmo Yogyakarta</p>
+              <p className="pb-3 text-sm italic">
+                3 Nights (May 5 - May 7, 2022)
+              </p>
+            </div>
+          </div>
+          <div>
+            <div className="w-80 m-auto p-3">
+              <img
+                src={bus}
+                alt="bus"
+                className="m-auto w-12 p-1 bg-white rounded-full"
+              />
+              <h1 className="p-1">COMPLIMENTARY SHUTTLE</h1>
+              <p className="pb-3 text-sm">
+                There will be a complimentary shuttle from your hotel to the
+                venue
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* </div> */}
+      </div>
+      {/* <TravelGuide /> */}
 
       {/*QNA*/}
 
       <div className="bg-ccream text-gray flex flex-col md:flex-row md:h-full">
-
-        <div
-         className="md:bg-gradient-to-r md:from-cgrey3 md:through md:to-ccream2 " 
-         >
+        <div className="md:bg-gradient-to-r md:from-cgrey3 md:through md:to-ccream2 ">
           <div className="container p-5 m-auto justify-center align-middle items-center flex flex-row md:flex-col">
-            <img src={opening}
-            className="rounded-2xl object-contain max-h-96"
+            <img
+              src={opening}
+              className="rounded-2xl object-contain max-h-96"
             />
-            <img src={journey}
-            className="rounded-2xl object-contain"
-            />
-
+            <img src={journey} className="rounded-2xl object-contain" />
           </div>
         </div>
 
-        <div className="p-10 md:p-12 lg:px-24 xl:ml-36 xl: md:overflow-y-auto" id="QNAContainer">
+        <div
+          className="p-10 md:p-12 lg:px-24 xl:ml-36 xl: md:overflow-y-auto"
+          id="QNAContainer"
+        >
           <div className="text-4xl">QUESTION AND ANSWER</div>
           <div className="container mt-12" id="qnaItemsContainer">
             <div className="flex flex-row  border-b border-black pb-4">

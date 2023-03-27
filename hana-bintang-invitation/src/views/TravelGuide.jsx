@@ -1,13 +1,14 @@
 import "../App.css";
-import bus from "../assets/bus.svg"
+import bus from "../assets/bus.svg";
 
 function TravelGuide() {
   return (
     <>
-      <div className="text-brokenWhite bg-cgrey1 w-full text-center">
-        <div className="container m-auto">
-          <h1 className="text-3xl p-5">TRAVEL GUIDE</h1>
+      <div className="text-brokenWhite bg-cgrey1 w-full text-center md:flex flex-row">
+        {/* <div className="container m-auto"> */}
+        <h1 className="text-3xl p-5">TRAVEL GUIDE</h1>
 
+        <div>
           <div className="w-80 m-auto p-3">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/d/d2/White_plane_icon.svg"
@@ -19,7 +20,9 @@ function TravelGuide() {
               We encourage you to book your own flight ticket to Yogyakarta
             </p>
           </div>
+        </div>
 
+        <div>
           <div className="w-80 m-auto p-3">
             <img
               src="https://www.pngfind.com/pngs/m/144-1449175_png-file-svg-logo-hotel-vector-png-transparent.png"
@@ -42,7 +45,9 @@ function TravelGuide() {
               3 Nights (May 5 - May 7, 2022)
             </p>
           </div>
+        </div>
 
+        <div>
           <div className="w-80 m-auto p-3">
             <img
               src={bus}
@@ -55,6 +60,7 @@ function TravelGuide() {
             </p>
           </div>
         </div>
+        {/* </div> */}
       </div>
     </>
   );
