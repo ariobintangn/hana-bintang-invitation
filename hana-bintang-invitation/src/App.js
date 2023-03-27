@@ -1,4 +1,5 @@
 import "./App.css";
+import gif from "./assets/gif.gif"
 import plane from "./assets/plane.svg";
 import bus from "./assets/bus.svg";
 import ring from "./assets/rings.svg";
@@ -6,11 +7,22 @@ import dinner from "./assets/dinner.svg";
 import location from "./assets/location.svg";
 import party from "./assets/party.svg";
 import party2 from "./assets/party2.svg";
+import sc1 from "./assets/sc1.jpeg"
+import sc2 from "./assets/sc2.jpeg"
+import sc3 from "./assets/sc3.jpeg"
+import sc4 from "./assets/sc4.jpeg"
+import sc5 from "./assets/sc5.jpeg"
+import sc6 from "./assets/sc6.jpeg"
+import sc7 from "./assets/sc7.jpeg"
+import sc8 from "./assets/sc8.jpeg"
+import b1 from "./assets/b1.jpeg"
+import b2 from "./assets/b2.jpeg"
 // import bus from "./assets/bus.svg";
 // import Journey from "./views/journey";
 // import paper from "./assets/paper.png";
 // import Guide from "./views/TravelGuide";
 import opening from "./assets/opening.JPG";
+import opening2 from "./assets/opening2.JPG";
 import journey from "./assets/journey1.png";
 import TravelGuide from "./views/TravelGuide";
 
@@ -56,7 +68,7 @@ function App() {
       {/* MAIN IMAGE */}
       <div className="">
         <div className="relative">
-          <img src={opening} alt="main wedding" className="" />
+          <img src={opening2} alt="main wedding" className="" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-cgrey1 bg-opacity-60 h-full text-center align-middle w-full">
             <h1 class="absolute text-2xl md:text-5xl text-brokenWhite italic top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
               "Love is composed of a single soul inhabiting two bodies"
@@ -181,14 +193,13 @@ function App() {
       {/*JOURNEY 2*/}
 
       <div className="" id="journey">
-        <div className="bg-cgrey text-left p-5 flex-col md:p-16 xl:px-36">
-          <div className="text-2xl md:text-3xl xl:text-5xl">
+        <div className="bg-cgrey1 text-left p-5 flex-col md:p-16 xl:px-36">
+          <div className="text-2xl md:text-5xl lg:text-7xl">
             <div className="py-2 flex items-center">
               <p>OUR JOURNEY STARTED</p>
               <img
                 alt="our wedding"
-                src={journey}
-                // style={{ maxWidth: "100px", borderRadius: "30%" }}
+                src={gif}
                 className="w-32 object-cover rounded-3xl ml-3"
               />
             </div>
@@ -203,7 +214,7 @@ function App() {
           </p>
           <img
             alt="our wedding 2"
-            src={journey}
+            src={sc1}
             // style={{ maxWidth: "80%", borderRadius: "30%"}}
             className="h-96 w-full object-cover rounded-full p-5"
           />
@@ -224,7 +235,7 @@ function App() {
 
       {/* GUIDE*/}
       <div className="bg-cgrey2 text-gray relative flex flex-col justify-center items-center object-contain md:text-xl">
-        <div className="w-11/12 md:w-7/12">
+        <div className="w-11/12 lg:w-7/12">
           <div className="bg-cpeach2 rounded-b-full relative text-center p-5 w-full z-10 pb-10 md:h-96 md:pt-16 ">
             <h1 className="py-2 text-4xl mb-3 md:text-5xl">
               WEDDING
@@ -387,18 +398,23 @@ function App() {
       {/*QNA*/}
 
       <div className="bg-ccream text-gray flex flex-col md:flex-row md:h-full">
-        <div className="md:bg-gradient-to-r md:from-cgrey3 md:through md:to-ccream2 ">
-          <div className="container p-5 m-auto justify-center align-middle items-center flex flex-row md:flex-col">
-            <img
-              src={opening}
-              className="rounded-2xl object-contain max-h-96"
-            />
-            <img src={journey} className="rounded-2xl object-contain" />
+        <div className="md:bg-gradient-to-r md:from-cgrey3 md:through md:to-ccream2 overflow-clip md:w-1/2">
+          <div className="container p-5 m-auto justify-center align-middle items-center flex flex-row md:pt-0 md:flex-col overflow-auto">
+            <div className="border-l-4 border-y-4 border-cgrey1 md:border-transparent w-1/3 md:h-1/3 md:w-full md:hidden">
+            <img src={sc5} className=" object-fit" />
+            
+            </div>
+            <div className="border-4 border-cgrey1 md:border-transparent w-1/3 md:h-1/3 md:w-full">
+            <img src={sc3} className="md:object-none"/>
+            </div>
+            <div className="border-4 border-l-0 border-cgrey1 md:border-transparent w-1/3 md:h-1/3 md:w-full md:hidden">
+            <img src={sc6} className=" object-contain" />
+            </div>
           </div>
         </div>
 
         <div
-          className="p-10 md:p-12 lg:px-24 xl:ml-36 xl: md:overflow-y-auto"
+          className="p-10 md:p-12 lg:px-24 xl:ml-36 xl: md:overflow-y-auto md:w-7/12"
           id="QNAContainer"
         >
           <div className="text-4xl">QUESTION AND ANSWER</div>
