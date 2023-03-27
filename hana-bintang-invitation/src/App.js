@@ -93,13 +93,13 @@ function App() {
       </div>
 
       {/* TIME CARD COUNTDOWN */}
-      <div className="bg-ccream2 text-gray md:bg-cgrey1 text-center w-full m-auto">
+      <div className="bg-ccream2 text-gray md:bg-cgrey1 text-center w-full m-auto md:pb-12">
           <img
             src="https://irwanclaudia.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvector-cut.3158038d.png&w=3840&q=75"
             className="-translate-y-16 md:-translate-y-24 xl:-translate-y-32 md:w-11/12 lg:-translate-y-28 md:m-auto"
             alt="scrapped paper"
           />
-        <div className="md:w-11/12 bg-ccream2 md:-mt-32 md:m-auto md:pt-12 pb-8">
+        <div className="md:w-11/12 bg-ccream2 md:-mt-32 md:m-auto md:pt-12 md:pb-12 md:rounded-b-3xl pb-8">
           <div className="text-chocolate p-5 font-semibold">#ARIOHANA</div>
           <div className="italic text-2xl w-3/4 m-auto mt-8">
             Here's to the beginning of our forever that we would like to share

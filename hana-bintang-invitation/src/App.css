@@ -54,7 +54,7 @@ body
 }
 
 .fade-in {
-  animation: fade-in 5s forwards;
+  animation: fade-in 7s forwards;
 }
 
 @keyframes fade-in {
