@@ -30,6 +30,10 @@ module.exports = {
         gray: "#403f3e",
         chocolate: "#959290",
       },
+      fontFamily: {
+        adamina: "'Adamina', serif",
+        quattro: "'Quattrocento Sans', sans-serif"       
+      }
     },
   },
   plugins: [],

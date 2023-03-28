@@ -83,7 +83,7 @@ function App() {
       <div className="">
         <div className="relative">
           <img src={opening2} alt="main wedding" className="" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-cgrey1 bg-opacity-60 h-full text-center align-middle w-full">
+          <div className=" font-quattro absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-cgrey1 bg-opacity-60 h-full text-center align-middle w-full">
             <h1 className={`absolute text-2xl md:text-5xl text-brokenWhite italic top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ${ animationComplete ? '' : 'fade-in'}`}       onAnimationEnd={handleAnimationEnd}>
               "Love is composed of a single soul inhabiting two bodies"
               <p className="text-sm xl:text-xl mt-2">-Aristoteles</p>
@@ -93,13 +93,13 @@ function App() {
       </div>
 
       {/* TIME CARD COUNTDOWN */}
-      <div className="bg-ccream2 text-gray md:bg-cgrey1 text-center w-full m-auto md:pb-12">
+      <div className="font-adamina bg-cgrey1 text-gray md:bg-cgrey1 text-center w-full m-auto md:pb-12">
           <img
             src="https://irwanclaudia.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvector-cut.3158038d.png&w=3840&q=75"
-            className="-translate-y-16 md:-translate-y-24 xl:-translate-y-32 md:w-11/12 lg:-translate-y-28 md:m-auto"
+            className="-translate-y-12 md:-translate-y-24 xl:-translate-y-32 md:w-11/12 lg:-translate-y-28 md:m-auto"
             alt="scrapped paper"
           />
-        <div className="md:w-11/12 bg-ccream2 md:-mt-32 md:m-auto md:pt-12 md:pb-12 md:rounded-b-3xl pb-8">
+        <div className="md:w-11/12 bg-ccream2 -mt-12 md:-mt-32 md:m-auto md:pt-12 md:pb-12 md:rounded-b-3xl pb-8">
           <div className="text-chocolate p-5 font-semibold">#ARIOHANA</div>
           <div className="italic text-2xl w-3/4 m-auto mt-8">
             Here's to the beginning of our forever that we would like to share
@@ -110,11 +110,11 @@ function App() {
             <div></div>
           </div>
 
-          <div className="text-chocolate pt-5 pb-2 font-bold">
+          <div className="font-quattro text-chocolate pt-5 pb-2 font-bold">
             Love shared since May 7th, 2022:
           </div>
 
-          <div className="p-4 pb-8 max-w-md m-auto font-semibold">
+          <div className="p-4 pb-8 max-w-md m-auto font-semibold font-quattro">
             <div className="flex -translate-x-3">
               <div className="bg-cgreen w-1/6 rounded-full text-sm p-3 translate-x-9 z-50">
                 {years}
@@ -149,7 +149,7 @@ function App() {
 
       {/* JOURNEY */}
 
-      <div className="text-brokenWhite">
+      <div className="font-adamina text-brokenWhite">
         <div className="relative">
           <img src={opening} alt="main wedding" className="" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-cgrey1 bg-opacity-60 h-full text-center align-middle w-full">
@@ -206,11 +206,11 @@ function App() {
 
       {/*JOURNEY 2*/}
 
-      <div className="" id="journey">
+      <div className="font-adamina" id="journey">
         <div className="bg-cgrey1 text-left p-5 flex-col md:p-16 xl:px-36">
-          <div className="text-2xl md:text-5xl lg:text-7xl">
+          <div className="text-3xl md:text-5xl lg:text-7xl">
             <div className="py-2 flex items-center">
-              <p>OUR JOURNEY STARTED</p>
+              <p>OUR JOURNEY STARTED,</p>
               <img
                 alt="our wedding"
                 src={gif}
@@ -220,7 +220,7 @@ function App() {
             <p className="py-2">WHEN WE PLAYED MUSIC</p>
             <p className="py-8 italic">Together</p>
           </div>
-          <p className="text-justify py-2 md:text-xl xl:pr-48 xl:py-20 xl:text-2xl">
+          <p className="font-quattro text-justify py-2 md:text-xl xl:pr-48 xl:py-20 xl:text-2xl">
             What started as a collaboration for Teman Jakarta's Youtube channel
             turns out to be the beginning of our story. Not long after meeting
             for the first time, our connection seems to get stronger with each
@@ -236,7 +236,7 @@ function App() {
             I said "I do"
           </h1>
           <p
-            className="md:text-xl text-justify py-2 xl:text-left xl:pr
+            className="font-quattro md:text-xl text-justify py-2 xl:text-left xl:pr
           -36 xl:pt-20 xl:text-2xl"
           >
             It's not always been an easy road to travel, as with every couple.
@@ -248,7 +248,7 @@ function App() {
       </div>
 
       {/* GUIDE*/}
-      <div className="bg-cgrey2 text-gray relative flex flex-col justify-center items-center object-contain md:text-xl">
+      <div className="font-adamina bg-cgrey2 text-gray relative flex flex-col justify-center items-center object-contain md:text-xl">
         <div className="w-11/12 lg:w-7/12">
           <div className="bg-cpeach2 rounded-b-full relative text-center p-5 w-full z-10 pb-10 md:h-96 md:pt-16 ">
             <h1 className="py-2 text-4xl mb-3 md:text-5xl">
@@ -258,12 +258,12 @@ function App() {
               <br />
               GUIDE
             </h1>
-            <p className="text-md">
+            <p className="text-md font-quattro">
               HI THERE, HERE IS THE GUIDE FOR YOU
               <br />
               TO COME TO OUR WEDDING
             </p>
-            <p className="italic text-sm">*All times are in WIB</p>
+            <p className="font-quattro italic text-sm">*All times are in WIB</p>
           </div>
 
           {/*----------------SCHEDULE-----------------*/}
@@ -271,7 +271,7 @@ function App() {
           <div className="bg-cpeach rounded-t-full text-center p-5  top-1/4 -mt-24 md:p-24">
             <div className="mt-10 pt-16">
               <h1>Friday, May 6, 2022</h1>
-              <button className="border-cgrey border bg-cgrey3 rounded-xl shadow-md mt-2 p-1 hover:bg-cgrey hover:text-white">
+              <button className="border-cgrey border bg-cgrey3 rounded-xl shadow-md mt-2 p-1 hover:bg-cgrey hover:text-white font-quattro">
                 ADD TO CALENDAR
               </button>
             </div>
@@ -286,14 +286,14 @@ function App() {
             <div className="">
               <p className="text-md">Family Arrival & Check In</p>
               <p className="text-sm">GUEST HOUSE YOGYAKARTA, YOGYAKARTA</p>
-              <p className="text-xs">12.00 ONWARDS</p>
+              <p className="text-xs font-quattro">12.00 ONWARDS</p>
             </div>
             <div className="left-1/2 items-center object-center mt-4">
               <img src={dinner} className="w-12 m-auto" alt="plane" />
             </div>
             <div className="">
               <p>Family Welcome Dinner</p>
-              <p className="text-xs">18.30 WIB</p>
+              <p className="text-xs font-quattro">18.30 WIB</p>
             </div>
 
             {/* -------------------- */}
@@ -326,21 +326,21 @@ function App() {
             </div>
             <div className="">
               <p>Holy Matrimony</p>
-              <p className="text-xs">16.30 WIB</p>
+              <p className="text-xs font-quattro">16.30 WIB</p>
             </div>
             <div className="left-1/2 items-center object-center mt-4">
               <img src={party} className="w-12 m-auto" alt="party" />
             </div>
             <div className="">
               <p>Party & Reception</p>
-              <p className="text-xs">17.30 ONWARDS</p>
+              <p className="text-xs font-quattro">17.30 ONWARDS</p>
             </div>
             <div className="left-1/2 items-center object-center mt-4">
               <img src={party2} className="w-12 m-auto" alt="party2" />
             </div>
             <div className="">
               <p>After Party</p>
-              <p className="text-xs">21.00 ONWARDS</p>
+              <p className="text-xs font-quattro">21.00 ONWARDS</p>
             </div>
           </div>
         </div>
@@ -348,9 +348,9 @@ function App() {
 
       {/* TRAVEL GUIDE */}
 
-      <div className="text-brokenWhite bg-cgrey1 w-full text-center md:h-full md:py-36">
+      <div className="text-brokenWhite bg-cgrey1 w-full text-center md:h-full md:py-12 font-quattro">
         {/* <div className="container m-auto"> */}
-        <h1 className="text-3xl p-5 md:pb-24 md:pt-0 md:text-7xl">TRAVEL GUIDE</h1>
+        <h1 className="text-3xl p-5 md:pb-24 md:pt-5 md:text-7xl font-adamina">TRAVEL GUIDE</h1>
 
         <div className="md:container md:w-11/12 xl:w-3/4 md:flex md:flex-row md:m-auto md:overflow-x-auto xl:translate-x-20 md:pt-12">
           <div>
@@ -428,10 +428,10 @@ function App() {
         </div>
 
         <div
-          className="p-10 md:p-12 lg:px-24 xl:ml-36 xl: md:overflow-y-auto md:w-7/12"
+          className="p-10 md:p-12 lg:px-24 xl:ml-36 xl: md:overflow-y-auto md:w-7/12 font-quattro"
           id="QNAContainer"
         >
-          <div className="text-4xl">QUESTION AND ANSWER</div>
+          <div className="text-4xl"><h1 className="font-adamina">QUESTION AND ANSWER</h1></div>
           <div className="container mt-12" id="qnaItemsContainer">
             <div className="flex flex-row  border-b border-black pb-4">
               <div id="container-header" className="text-3xl mr-2">
@@ -544,7 +544,7 @@ function App() {
         </div>
       </div>
 
-      <footer className="bg-cgrey1 text-center">
+      <footer className="bg-cgrey1 text-center font-quattro">
         <h1 className="p-5 w-60 m-auto">
           WEBSITE BY ARIO, DESIGN BY MONICADSGN
         </h1>
